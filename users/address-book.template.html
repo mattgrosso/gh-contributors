@@ -9,7 +9,9 @@
 <section class='gh-addressbook'>
     <ul>
         <li ng-repeat='user in addr.users'>
-            <section class='gh-user'>{{user.name}}</section>
+            <section class='gh-user'>
+              <user-data user='user'></user-data>
+            </section>
         </li>
     </ul>
 </section>
